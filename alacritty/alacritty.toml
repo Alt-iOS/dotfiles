@@ -10,4 +10,4 @@ program = "/opt/homebrew/bin/fish"
 
 
 [window]
-option_as_alt = "Both" # other values are None, OnlyRight, Both]
+option_as_alt = "OnlyLeft" # other values are None, OnlyRight, Both]
