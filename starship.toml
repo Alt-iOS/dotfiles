@@ -16,6 +16,7 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
+
 [directory]
 style = "fg:#000000 bg:#769ff0"
 format = "[ $path ]($style)"
@@ -62,3 +63,7 @@ disabled = false
 time_format = "%R"                                      # Hour:Minute Format
 style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)'
