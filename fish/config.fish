@@ -13,6 +13,6 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 starship init fish | source
 
 
-load_nvm >/dev/stderr
+# load_nvm >/dev/null
 
 status --is-interactive; and /opt/homebrew/bin/rbenv init - fish | source
