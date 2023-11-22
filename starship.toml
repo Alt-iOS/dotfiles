@@ -68,3 +68,5 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
+
+command_timeout = 1000
