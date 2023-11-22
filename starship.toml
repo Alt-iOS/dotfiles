@@ -16,6 +16,8 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
+command_timeout = 1000
+
 
 [directory]
 style = "fg:#000000 bg:#769ff0"
@@ -68,5 +70,3 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
-
-command_timeout = 1000
