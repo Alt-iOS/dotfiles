@@ -1,5 +1,5 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    atuin init fish | source
 end
 
 if uname -m | grep -q arm64
@@ -12,7 +12,7 @@ complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 
 starship init fish | source
 
-
 # load_nvm >/dev/null
+zoxide init fish | source
 
 status --is-interactive; and /opt/homebrew/bin/rbenv init - fish | source
