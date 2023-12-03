@@ -14,5 +14,3 @@ starship init fish | source
 
 load_nvm >/dev/null
 zoxide init fish | source
-
-status --is-interactive; and /opt/homebrew/bin/rbenv init - fish | source
