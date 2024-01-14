@@ -22,7 +22,3 @@ wk.register({
 vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("wa")
 end, { silent = true, desc = "Save all files" })
-
-vim.keymap.set("n", "<leader>cs", function()
-  vim.cmd("Lspsaga outline")
-end, { silent = true, desc = "Symbols outline" })

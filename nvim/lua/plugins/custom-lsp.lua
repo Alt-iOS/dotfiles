@@ -28,9 +28,18 @@ return {
           less = { validate = true },
         },
       },
-      tailwindcss = {},
+      tailwindcss = {
+        filetypes = { "html", "css", "scss", "jsscript", "javascriptreact", "typescript", "typescriptreact", "rust" },
+        init_options = {
+          userLanguages = {
+            rust = "html",
+          },
+        },
+        on_attach = function(client, bufnr)
+          require("tailwindcss-colors").buf_attach(bufnr)
+        end,
+      },
       cssls = {},
     },
-    dependencies = { "nvimdev/lspsaga.nvim" },
   },
 }

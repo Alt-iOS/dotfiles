@@ -1,11 +1,17 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
   { "bluz71/vim-moonfly-colors" },
-  -- Configure LazyVim to load gruvbox
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "moonfly",
+      colorscheme = "rose-pine",
     },
   },
 }
