@@ -24,6 +24,7 @@ return {
       "vim",
       "yaml",
       "dart",
+      "go",
     })
   end,
 }
