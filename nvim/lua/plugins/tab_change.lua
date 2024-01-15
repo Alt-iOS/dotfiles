@@ -45,6 +45,7 @@ return {
           "i",
           "s",
         }),
+        ["<CR>"] = vim.NIL,
       })
     end,
   },
