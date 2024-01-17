@@ -5,6 +5,12 @@
 local wk = require("which-key")
 
 wk.register({
+  ["C-h"] = { "<cmd>TmuxNavigateLeft<CR>", "windows left" },
+  ["C-j"] = { "<cmd>TmuxNavigateDown<CR>", "windows down" },
+  ["C-k"] = { "<cmd>TmuxNavigateUp<CR>", "windows up" },
+  ["C-l"] = { "<cmd>TmuxNavigateRight<CR>", "windows rigth" },
+})
+wk.register({
   s = {
     name = "+search",
     l = { "<cmd> Telescope resume<CR>", "Resume last Telescope search" },
