@@ -1,1 +1,19 @@
 *.DS_Store
+.avalonia-build-tasks
+JetBrains
+Microsoft\VisualStudio Services/8.0/Cache
+Unreal Engine/UnrealBuildTool
+expressvpn
+flutter
+gh
+gh
+github-copilot
+jgit
+karabiner
+pgcli
+qBittorrent
+rasa
+raycast/extensions
+simple-update-notifier
+wireshark
+xbuild
