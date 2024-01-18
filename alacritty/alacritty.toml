@@ -1,3 +1,5 @@
+import = ["~/.config/alacritty/rose-pine.toml"]
+
 [font]
 normal.family = "JetBrainsMono Nerd Font"
 bold.family = "JetBrainsMonoNL NFM ExtraBold"
@@ -7,7 +9,6 @@ size = 14.0
 
 [shell]
 program = "/bin/zsh"
-
 
 [window]
 option_as_alt = "OnlyLeft" # other values are None, OnlyRight, Both]
