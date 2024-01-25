@@ -11,12 +11,13 @@ $nodejs\
 $rust\
 $golang\
 $php\
+$python\
 [](fg:#212736 bg:#1d2230)\
 $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
-command_timeout = 1000
+command_timeout = 5000
 
 
 [directory]
@@ -57,6 +58,11 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [php]
 symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[python]
+symbol = "🐍"
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 

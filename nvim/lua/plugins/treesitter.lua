@@ -25,6 +25,7 @@ return {
       "yaml",
       "dart",
       "go",
+      "svelte",
     })
   end,
 }
