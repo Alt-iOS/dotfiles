@@ -2,6 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      gopls = {},
       -- Ensure mason installs the server
       rust_analyzer = {
         settings = {
