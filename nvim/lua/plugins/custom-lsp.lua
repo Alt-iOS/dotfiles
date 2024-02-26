@@ -15,19 +15,6 @@ return {
           },
         },
       },
-      volar = {
-        settings = {
-          css = {
-            validate = true,
-            lint = { unknownAtRules = "ignore" }, -- ignore @ rules like @tailwind
-          },
-          scss = {
-            validate = true,
-            lint = { unknownAtRules = "ignore" }, -- ignore @ rules like @tailwind
-          },
-          less = { validate = true },
-        },
-      },
       tailwindcss = {
         filetypes = { "html", "css", "scss", "jsscript", "javascriptreact", "typescript", "typescriptreact", "rust" },
         init_options = {
