@@ -20,7 +20,7 @@ wk.register({
     name = "+run",
     r = { "<cmd>RustRun<CR>", "Rust Run" },
     R = { "<cmd>RustRunnables<CR>", "Rust Runnables (in terminal)" },
-    a = { "<cmd>RorCommands<CR>", "Ror commands" },
+    -- a = { "<cmd>RorCommands<CR>", "Ror commands" },
   },
   f = { u = { "<cmd> Telescope undo<CR>", "Undo Tree" } },
 }, { prefix = "<leader>" })
