@@ -28,3 +28,15 @@ wk.register({
 vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("wa")
 end, { silent = true, desc = "Save all files" })
+
+local harpoon = require("harpoon")
+
+-- REQUIRED
+harpoon:setup()
+-- REQUIRED
+vim.keymap.set("n", "<leader>a", function()
+  harpoon:list():append()
+end, { desc = "Append to Harpoon" })
+vim.keymap.set("n", "<C-e>", function()
+  harpoon.ui:toggle_quick_menu(harpoon:list())
+end, { desc = "Harpoon menu" })
