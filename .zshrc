@@ -1,12 +1,15 @@
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
+export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"
 export PATH="$PATH:/Users/$USER/.dotnet/tools"
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/25.1.8937393"
 source ~/.zsh_functions/zsh-nvm/zsh-nvm.plugin.zsh
 source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
+export PATH="/usr/local/go/bin/:$PATH"
+export PATH="$HOME/go/bin/:$PATH"
+export PATH="$PATH:/usr/local/bin"
 if [ "$(arch)" = "arm64" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 else
@@ -21,13 +24,12 @@ fi
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
-
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export EDITOR="/opt/homebrew/bin/nvim"
 export VISUAL="/opt/homebrew/bin/nvim"
 eval "$(rbenv init - zsh)"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-eval "$(starship init zsh)"
+fpath+=/opt/homebrew/share/zsh/site-functions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(atuin init zsh  --disable-up-arrow)"
 eval "$(zoxide init zsh)"
@@ -46,3 +48,11 @@ alias fzf-p=~/.config/tmux/fzf-p
       bindkey "$key" down-line-or-history
    done
 }
+# bun completions
+[ -s "/Users/victor/.bun/_bun" ] && source "/Users/victor/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
