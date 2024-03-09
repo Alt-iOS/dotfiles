@@ -1,14 +1,11 @@
 *.DS_Store
 .avalonia-build-tasks
 JetBrains
-Microsoft\
-Unreal Engine/UnrealBuildTool
 expressvpn
 flutter
 github-copilot
 jgit
 karabiner
-pgcli
 qBittorrent
 rasa
 raycast/extensions
@@ -16,9 +13,10 @@ simple-update-notifier
 wireshark
 xbuild
 copyq
-pgcli
-Microsoft\VisualStudio Services/8.0/Cache
 btop
 zed
-Microsoft\VisualStudio Services/8.0/Cache
 Ryujinx
+pgcli
+litecli
+
+Unreal Engine/UnrealBuildTool

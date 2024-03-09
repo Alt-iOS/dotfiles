@@ -3,19 +3,6 @@ return {
   opts = {
     servers = {
       gopls = {},
-      -- Ensure mason installs the server
-      rust_analyzer = {
-        settings = {
-          ["rust-analyzer"] = {
-            -- Add clippy lints for Rust.
-            checkOnSave = {
-              allFeatures = true,
-              command = "clippy",
-              extraArgs = { "--all" },
-            },
-          },
-        },
-      },
       tailwindcss = {
         filetypes = { "html", "css", "scss", "jsscript", "javascriptreact", "typescript", "typescriptreact", "rust" },
         init_options = {
