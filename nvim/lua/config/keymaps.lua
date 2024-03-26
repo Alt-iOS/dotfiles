@@ -16,12 +16,6 @@ wk.register({
     l = { "<cmd> Telescope resume<CR>", "Resume last Telescope search" },
     R = { '<cmd>lua require("spectre").open_file_search({})<CR>', "Replace on current file" },
   },
-  r = {
-    name = "+run",
-    r = { "<cmd>RustRun<CR>", "Rust Run" },
-    R = { "<cmd>RustRunnables<CR>", "Rust Runnables (in terminal)" },
-    -- a = { "<cmd>RorCommands<CR>", "Ror commands" },
-  },
   f = { u = { "<cmd> Telescope undo<CR>", "Undo Tree" } },
 }, { prefix = "<leader>" })
 
